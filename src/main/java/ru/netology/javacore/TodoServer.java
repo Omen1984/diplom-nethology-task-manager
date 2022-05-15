@@ -14,8 +14,8 @@ import java.net.Socket;
 
 public class TodoServer {
     private int port;
-    Todos todos;
-    Gson gson;
+    private Todos todos;
+    private Gson gson;
 
     public TodoServer(int port, Todos todos) {
         this.port = port;

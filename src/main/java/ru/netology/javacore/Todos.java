@@ -4,8 +4,8 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class Todos {
-    List<String> todos;
-    
+    private List<String> todos;
+
     public Todos() {
         todos = new ArrayList<>();
     }
