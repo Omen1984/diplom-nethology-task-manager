@@ -1,7 +1,5 @@
 package ru.netology.javacore;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
@@ -15,12 +13,10 @@ import java.net.Socket;
 public class TodoServer {
     private int port;
     private Todos todos;
-    private Gson gson;
 
     public TodoServer(int port, Todos todos) {
         this.port = port;
         this.todos = todos;
-        this.gson = new GsonBuilder().create();
     }
 
     public void start() throws IOException {
